@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+   
+</head>
+<body bgcolor="white">
+    <center><h1 style="color:#0d00ff;">Welcome to the blogging website</h1></center><br><br>
+    <ul>
+      <big><big> <% posts.forEach(post => { %>
+            <li><a href="/blog/<%= post.id %>"><%= post.title %></a></li>
+        <% }); %></big> </big>
+    </ul>
+    <br>
+
+    <center><big><a href="/editor" ><button><font color="red">Editor</a></font></button></big></center>
+</body>
+</html>

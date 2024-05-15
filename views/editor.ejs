@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor</title>
+    <link rel="stylesheet" href="/public/editor.css">
+</head>
+<body>
+   <center> <h1><font color="red">Editor</font></h1>
+    <form action="/publish" method="post" enctype="multipart/form-data">
+        <label for="title"><b>Title:</b></label><br><br>
+       <b> <input type="text" id="title" name="title" required></b><br><br>
+        <label for="content"><b>Content:</b></label><br><br>
+        <textarea id="content" name="content" rows="4" cols="50" required></textarea><br><br>
+        <label for="image"><b>Upload Image:</b></label><br><br>
+        <input type="file" id='image' name='image' accept="image/*"><br><br>
+        <button type="submit">Publish</button>
+    </form></center>
+</body>
+</html>
